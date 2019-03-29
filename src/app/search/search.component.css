@@ -1,0 +1,6 @@
+form  {
+    width: 50vw;
+}
+form input {
+    width: calc(100% - 100px);
+}
