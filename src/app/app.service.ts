@@ -8,7 +8,7 @@ export class AppService {
     constructor(private http: HttpClient){}
     getUser(): Observable<{}> {
         return this.http.get('http://localhost:3000/user')
-            .map((resp) => {
+            .map((resp: Response) => {
                 return resp.json();
             })
             .catch((error: any) => {

@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   }
   ngOnInit() {
       this.getUser();
+      console.log('subscribe', this.user);
   }
   getUser(): void {
       this.appService.getUser().subscribe(
@@ -25,6 +26,5 @@ export class AppComponent implements OnInit {
               this.error = error;
           }
       );
-      console.log('subscribe', this.user);
   }
 }
