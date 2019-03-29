@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import {SearchService} from "./search/services/search.service";
 import {AppService} from "./app.service";
-import {HttpModule} from '@angular/http';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -18,7 +18,7 @@ import {HttpModule} from '@angular/http';
   ],
   imports: [
     BrowserModule,
-      HttpModule
+      HttpClientModule
   ],
   providers: [
       SearchService,
